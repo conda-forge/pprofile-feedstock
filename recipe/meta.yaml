@@ -1,6 +1,6 @@
 {% set name = "pprofile" %}
-{% set version = "1.9.2" %}
-{% set sha256 = "98ec97bbbf524ee9af0b73738f70b02e8f049f7edcd86f6c96d1b9470483831a" %}
+{% set version = "1.11.0" %}
+{% set sha256 = "301f465a97cc965c60111a0609552a877a699562b06a3205ee6c291b835c416b" %}
 
 package:
   name: {{ name|lower }}
