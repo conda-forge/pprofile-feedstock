@@ -14,14 +14,16 @@ Summary: Line-granularity, thread-aware deterministic and statistic pure-python 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pprofile-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pprofile-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pprofile-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pprofile-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pprofile-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pprofile-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pprofile-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pprofile-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pprofile-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pprofile-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pprofile-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pprofile-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pprofile/badges/version.svg)](https://anaconda.org/conda-forge/pprofile)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pprofile/badges/downloads.svg)](https://anaconda.org/conda-forge/pprofile)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pprofile-green.svg)](https://anaconda.org/conda-forge/pprofile) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pprofile.svg)](https://anaconda.org/conda-forge/pprofile) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pprofile.svg)](https://anaconda.org/conda-forge/pprofile) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pprofile.svg)](https://anaconda.org/conda-forge/pprofile) |
 
 Installing pprofile
 ===================
