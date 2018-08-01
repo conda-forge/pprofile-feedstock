@@ -34,11 +34,7 @@ test:
 about:
   home: http://github.com/vpelletier/pprofile
   license: GPL2
-  # PyPI missing license file. Added PR to add it to future sdists.
-  #
-  # xref: https://github.com/vpelletier/pprofile/pull/17
-  #
-  #license_file: COPYING
+  license_file: COPYING
   summary: Line-granularity, thread-aware deterministic and statistic pure-python profiler
 
 extra:
