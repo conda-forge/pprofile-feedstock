@@ -12,15 +12,15 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
-    - pprofile=pprofile:main
+    - pprofile = pprofile:main
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
@@ -34,11 +34,7 @@ test:
 about:
   home: http://github.com/vpelletier/pprofile
   license: GPL2
-  # PyPI missing license file. Added PR to add it to future sdists.
-  #
-  # xref: https://github.com/vpelletier/pprofile/pull/17
-  #
-  #license_file: COPYING
+  license_file: COPYING
   summary: Line-granularity, thread-aware deterministic and statistic pure-python profiler
 
 extra:
