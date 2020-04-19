@@ -1,6 +1,6 @@
 {% set name = "pprofile" %}
-{% set version = "2.0.2" %}
-{% set sha256 = "3469102f462f9fc2d889970afcf73d89c0d89a36c49a4c262c3edc302b4a22da" %}
+{% set version = "2.0.3" %}
+{% set sha256 = "91d1d5b700c9c9ff741361d2da6ab71a1b42a03a2936a01f71328c6d7db585f9" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - pprofile = pprofile:main
 
