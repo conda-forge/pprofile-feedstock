@@ -33,7 +33,7 @@ test:
 
 about:
   home: http://github.com/vpelletier/pprofile
-  license: GPL2
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary: Line-granularity, thread-aware deterministic and statistic pure-python profiler
 
