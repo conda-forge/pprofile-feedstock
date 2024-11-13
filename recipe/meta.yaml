@@ -1,19 +1,18 @@
 {% set name = "pprofile" %}
-{% set version = "2.0.2" %}
-{% set sha256 = "3469102f462f9fc2d889970afcf73d89c0d89a36c49a4c262c3edc302b4a22da" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "edd57f35f2b3fb84e7d01aa310a44bfabacc66ffc353dce147348ec14de3c7d9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pprofile = pprofile:main
 
@@ -21,6 +20,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
 
